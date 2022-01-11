@@ -89,13 +89,8 @@
                 <div class="col-md-12 text-center">
                   <button onclick="showAlert()" type="submit">Book Now</button>
                 </div>
-                <script>
-                    function showAlert() {
-                      alert ("Your Booking Successfully submitted.");
-                     
-                    }
-                </script>
-             
+                
+                
 
               </div>
             </form></div>
