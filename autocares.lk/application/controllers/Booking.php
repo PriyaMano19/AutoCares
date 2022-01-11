@@ -64,7 +64,8 @@ class Booking extends CI_Controller {
 
             $this->Booking_model->insert($shop_id,$name,$v_no,$mobile,$service,$time,$email);
             $this->session->set_flashdata('booking_success', "<div class='alert alert-success'>Your Booking has been Updated. We will contact soon!!</div>");
-            redirect('Home');
+            //redirect('Home');
+			redirect('Booking/index');
         }
 	}
 }

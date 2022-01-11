@@ -7,6 +7,15 @@
           <p>Book Your Service</p>
         </header>
 
+        <div>
+          <?php
+          if ($this->session->flashdata('booking_success')) {
+            echo $this->session->flashdata('booking_success');
+          }
+          ?>
+        </div>
+
+
         <style type="text/css">
           .shop-name{
             margin: 10px 0 0 0;
@@ -78,8 +87,15 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <button type="submit">Book Now</button>
+                  <button onclick="showAlert()" type="submit">Book Now</button>
                 </div>
+                <script>
+                    function showAlert() {
+                      alert ("Your Booking Successfully submitted.");
+                     
+                    }
+                </script>
+             
 
               </div>
             </form></div>
